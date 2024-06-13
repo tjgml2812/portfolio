@@ -1,0 +1,22 @@
+/* BI의 실제 본문 내용 css */
+
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 120px 0;}
+#content .content_area li{overflow: hidden; margin: 0 70px 150px 70px;}
+
+#content .content_area li img{float: left; padding:17px; transition: all .5s; }
+#content .content_area li:hover img{ transform: scale(1.1); }
+#content .content_area .character2{float: right; }
+#content .content_area li dl{width: 520px; text-align: justify;}
+#content .content_area .dl_box{float: right;}
+
+#content .content_area ul dt{color: #00a7ce; font-size: 2.00rem; font-weight: 700; margin-bottom: 40px; text-align: center; }
+#content .content_area ul dd{font-size: 1.125em; font-weight: 400; line-height: 2.2rem;}
+
+#content .content_area .brand{font-size:2.50rem ; font-weight: 700; text-align: center; position: relative;}
+#content .content_area .brand::after{content: ''; width: 400px; height: 3px; background: #00a7ce;
+    display: block; position: absolute; bottom: -15px;left: 50%; margin-left: -200px;}
+#content .content_area .brand_1 img{margin: 100px 0 100px 370px;}
+#content .content_area .brand_1 p{font-size: 1.25rem; font-weight: 400; text-align: center; line-height: 2.4rem;}
+#content .content_area .brand_2{margin: 150px 0 180px 0; overflow: hidden;}
+#content .content_area .brand_2 p{font-size: 1.56rem; font-weight: 700;}
+#content .content_area .brand_2 img{float: left; margin: 50px 110px 0 0;}

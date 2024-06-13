@@ -1,0 +1,119 @@
+#content {width: 1200px; margin: 0 auto;}
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 120px 0;}
+
+/* 텝 */
+#content .tab_box{border-bottom: 1px solid #ccc; margin-bottom: 140px; }
+#content .tabs {margin-bottom: 400px;}
+#content .tabs .contlist {display: none;}
+#content .tab_box ul{display: flex; justify-content: center;  }
+#content .tab_box ul li{width: 350px; text-align: center; }
+#content .tab_box ul li a{padding-bottom: 20px;  font-size: 1.44rem; font-weight: 400; position: relative; }
+#content .tab_box ul li a::after{content: '';display: block; width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #00A7CE;
+    position: absolute;
+    left: 90px;
+    top: -18px; transform: scale(.1);
+    z-index: -1; opacity:0; transition: all .5s;}
+#content .tab_box ul li a.active-tab::after{content: ''; transform: scale(1); opacity:.4;}
+/* 프로그램 */
+
+#content .box{  margin-bottom: 200px;
+position: relative;}
+#content .box::before{ content: ''; 
+width: 100%;
+height: 1px;
+background: #ccc;
+display: block;
+position: absolute;
+bottom: -75px;
+
+}
+#content .box img{ float: left; margin-left: 25px; }
+#content .box dl{text-align: center;}
+#content .box dt{font-size: 1.88rem; font-weight: 700; margin-bottom: 10px;}
+#content .box dd{font-size: 1.25rem; font-weight: 500;margin-bottom: 25px;}
+
+
+#content .box ul{float: left;
+padding-left: 25px;
+margin-left: 30px;
+width: 600px; background: #F3FAFC; border-radius: 30px;} 
+#content .box li{margin: 18px 0; font-size: 1.00rem; font-weight: 400;}
+#content .box li i{color: #00A7CE; margin-right: 8px;}
+#content .box span{font-weight: 700; }
+
+#content .box a{
+position: absolute;
+bottom: 45px;
+left:  41.5%;
+
+width: 155px;
+overflow: hidden; 
+
+color: #00a7ce;
+border-radius: 30px;
+text-align: center;
+position: relative; 
+font-size: .94rem;  
+font-weight: 400; 
+margin: 20px 0 0 25px;
+transition: all .5s ease-out;
+}
+#content .box a:hover{color: #fff; transition: all .5s ease-out;}
+#content .box a::before{
+content: "";
+display: block;
+height: 100px;
+width: 0; 
+background: #00a7ce;
+position: absolute; 
+left: 0; 
+top:0; 
+transition: all .7s ease-out;
+}
+#content .box a:hover::before{width:200px;}
+#content .box a span{
+border-radius: 30px;
+padding: 8px 0;
+border: 2px solid #00a7ce; 
+position: relative; 
+display: block; 
+transition: all .5s ease-out;}
+#content  .box a:hover span{color: #fff;}
+
+    /* 팝업 */
+    .modal_box{position: fixed; left: 0; top: 0; z-index: 100; width: 100%; height: 100%; 
+        background-color: rgba(0, 0, 0, .5);  display: none;}
+    .modal_box .card_content{   width: 750px; height: 600px; overflow: scroll;
+        position: absolute; top: 55%; left: 50%; 
+          /* margin: -300px 0 0 -300px;   */
+        transform: translate(-50%,-50%);  /* 위에 주석이랑 같은 값  */
+        background: #fff; box-shadow: 1px 3px 7px 0px #666;
+        }
+        .modal_box img{width: 94%; height: 350px; object-fit: cover; margin:70px 3% 20px 3%;}
+        .modal_box dl{width: 94%; margin:10px 3% 30px 3%; text-align: justify; line-height: 2rem;}
+        .modal_box dt{font-size: 1.2em; font-weight: bold; margin-bottom: 10px; color: #00a7ce; text-align: center;}
+        .modal_box .close_btn{position: absolute; top: 25px; right: 5px; 
+        display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+        height: 32px; padding: 9px 9px; background: url(../images/content1/cancel.png) no-repeat;}
+ 
+
+    /* 팝업 */
+/* .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 500px; height:600px; overflow: scroll;
+    background: #fff; display: none;}
+
+.modal_box img{width: 90%; margin:80px 5% 20px;}
+.modal_box dl{width: 90%; margin:10px 5%;  }
+.modal_box dt{font-size: 1.5em; font-weight: bold; margin-bottom: 10px; color: #00A7CE;}
+.modal_box dd{text-align: justify; line-height: 1.5rem;}
+.modal_box ul{width: 90%; margin:10px 5%;}
+.modal_box ul li{line-height: 1.8rem; font-size: 1.1rem;}
+.modal_box .close_btn{position: absolute; top: 40px; right: 5%;
+display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+height: 32px; background:url(../images/cancel.png) no-repeat;}  */
+
+
+
+ 

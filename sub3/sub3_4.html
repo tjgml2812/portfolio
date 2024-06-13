@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용안내-오시는 길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content4.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/9f8b253496.js" crossorigin="anonymous"></script>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c377f3f7b76e4fd2c941880b10d0b671"></script>
+    <script src="./js/map.js"></script>
+
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+
+   
+   <div class="visual">
+       <img src="./common/images/visual.jpg" alt="">
+       <span>이용안내</span>
+   </div>
+
+   <div class="sub_nav">
+        <ul>
+            <li><a href="./sub3_1.html">운영시간</a></li>
+            <li><a href="./sub3_2.html" >이용요금</a></li>
+            <li><a href="./sub3_3.html">우대정보</a></li>
+            <li><a href="./sub3_4.html" class="current">오시는 길</a></li>
+        </ul>
+   </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                Home
+                &gt;
+                이용안내  
+                &gt;
+                <strong>오시는 길</strong> 
+            </div>
+            <h2>오시는 길</h2>
+            <p>Location</p>
+        </div>
+
+        <p class="sec"> 롯데월드 아쿠아리움 오시는 길<br>
+           " 서울특별시 송파구 올림픽로 300 / 롯데월드몰 엔터테인먼트동 지하1층 "
+        </p>
+        
+       
+            <div class="map_api">
+       
+                <div id="map">
+                     <!-- 여기에 카카오 지도 삽입 -->
+                </div>
+            </div>   
+
+           <div class="box">
+                <h4  class="bus">
+                    <i class="fa-solid fa-bus-simple"></i>
+                    버스
+                </h4>
+                <ul>
+                    <li><strong>서울역 출발 :</strong> 서울역(4호선) → 동대문역사문화공원(2호선 환승역) → 잠실(2,8호선) 1번 출구 (약 32분)</li>
+                    <li><strong>용산역 출발 :</strong> 용산(중앙선) → 왕십리(2호선 환승역) → 잠실(2,8호선) (약 37분)</li>
+                    <li><strong>영등포역 출발 :</strong> 영등포(1호선) → 신도림(2호선 환승역) → 잠실(2,8호선) (약 47분)</li>
+                    <li><strong>청량리역 출발 :</strong> 청량리(중앙선) → 왕십리(2호선 환승역) → 잠실(2,8호선) (약 24분)</li>
+                    <li><strong>고속터미널역 출발 :</strong> 고속터미널(3호선) → 교대(2호선 환승역) → 잠실(2,8호선) (약 23분)</li>
+                    <li><strong>남부터미널역 출발 </strong>: 남부터미널(3호선) → 교대(2호선 환승역) → 잠실(2,8호선) (약 23분)</li>
+                    <li><strong>강변역 출발 :</strong> 강변(2호선) → 잠실(2,8호선) (약 5분)</li>
+                </ul>
+
+                <h4  class="subway">
+                    <i class="fa-solid fa-train-subway"></i>
+                    지하철
+                </h4>
+                <ul>
+                    <li><strong>지선버스 :</strong> 3217번, 3313번, 3314번, 3315번, 3317번, 3411번, 3414번, 4319번</li>
+                    <li><strong>광역버스 :</strong> 1007-1번, 1100번, 1700번, 2000번, 6900번, 7007번, 8001번</li>
+                    <li><strong>간선버스 :</strong> 301번, 341번, 360번, 362번</li>
+                    <li><strong>공항버스 :</strong> 6000번, 6006번, 6705번, 6706A번</li>
+                </ul>
+                
+                <p>*서울특별시 내 주요 기차역, 공항, 터미널을 기준으로 출발역을 지정하였습니다.</p>
+
+            </div>
+
+           
+          
+
+    </article>
+
+    <? include '../common/sub_footer.html' ?>
+  
+</body>
+</html>

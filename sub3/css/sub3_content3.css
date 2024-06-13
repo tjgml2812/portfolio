@@ -1,0 +1,58 @@
+
+
+
+#content{width: 1200px; margin: 0 auto;}
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 120px 0 220px 0;}
+
+
+/* 텝 */
+#content .tab_box{margin: 0 auto;border-bottom: 1px solid #ccc; margin-bottom: 140px; }
+#content .tabs .contlist {display: none;}
+#content .tab_box ul{display: flex; justify-content: center;  }
+#content .tab_box ul li{width: 350px; text-align: center; }
+#content .tab_box ul li a{padding-bottom: 20px;  font-size: 1.44rem; font-weight: 400; position: relative; }
+#content .tab_box ul li a::after{content: '';display: block; width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #00A7CE;
+    position: absolute;
+    left: 90px;
+    top: -18px; transform: scale(.1);
+    z-index: -1; opacity:0; transition: all .5s;}
+#content .tab_box ul li a.active-tab::after{content: ''; transform: scale(1); opacity:.4;}
+
+
+/* 일반우대 */
+#content .box1 { display: flex;justify-content: center; flex-wrap: wrap; gap: 120px 40px; margin-bottom: 300px; }
+#content .box1 li { width: 320px; height: 480px; }
+#content .box1 li img{display: block; margin: 0 auto; transition: all .6s; }
+#content .box1 li:hover img{transform:rotateY(360deg)}
+
+#content .box1 dl{text-align: center; line-height: 2.2rem;}
+#content .box1 dt{font-size: 1.25rem; font-weight: 700; margin-top: 30px;} 
+#content .box1 dl dd p{font-weight: 700;color: #00a7ce; margin-top: 15px; transition: all .5s;}
+#content .box1 li:hover dl dd p {transform: scale(1.25);} 
+
+/* 신용카드 */
+#content .box2 { display: flex;justify-content: center; flex-wrap: wrap; gap: 80px 40px; margin-bottom: 300px; }
+#content .box2 li { width: 320px; height: 480px;}
+#content .box2 li img{display: block; margin: 0 auto; transition: all .6s;}
+#content .box2 li:hover img{transform:rotateY(360deg)}
+
+#content .box2 .samsung{position: relative; left: -360px; }
+
+#content .box2 dl{text-align: center; line-height: 2.2rem;}
+#content .box2 dt{font-size: 1.25rem; font-weight: 700; margin-top: 30px;} 
+#content .box2 dl dd p{font-weight: 700;color: #00a7ce; margin-top: 15px; transition: all .5s;}
+#content .box2 li:hover dl dd p {transform: scale(1.25);} 
+
+/* 간편결제/멤버쉽 */
+#content .box3 { display: flex;justify-content: center; flex-wrap: wrap; gap: 100px 40px; margin-bottom: 300px; }
+#content .box3 li { width: 320px; height: 480px; }
+#content .box3 li img{display: block; margin: 0 auto; transition: all .6s; }
+#content .box3 li:hover img{transform:rotateY(360deg)}
+
+#content .box3 dl{text-align: center; line-height: 2.2rem;}
+#content .box3 dt{font-size: 1.25rem; font-weight: 700; margin-top: 30px;} 
+#content .box3 dl dd p{font-weight: 700;color: #00a7ce; margin-top: 15px; transition: all .5s;}
+#content .box3 li:hover dl dd p {transform: scale(1.25);} 

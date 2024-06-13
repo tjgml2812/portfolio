@@ -1,0 +1,69 @@
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 95px 0; line-height: 3rem; position: relative;}
+/* #content .sec::before{ 
+content: "";
+display: block;
+width: 555px;
+height: 20px;
+background: #00a7ce;
+opacity: .4;
+position: absolute;
+left: 50%;
+top: 140px;
+margin-left: -280px;
+transform: skewX(-30deg);
+z-index: -10;
+} */
+#content .sec::before{content: ""; display: block; width: 0; height: 20px; background: #00a7ce;
+    opacity: .4; position: absolute; left: 50%; top:140px; margin-left: -280px; transform: skewX(-30deg); z-index: -10; transition: all .5s ease-out;}
+#content:hover .sec::before{width: 555px;}
+
+ 
+/*  인재상 */
+ 
+#content .all1{width: 1450px; margin: 0 auto; position: relative;}
+#content .all1 h3{text-align: center; margin:180px 0; font-size: 3.13rem; font-weight: 700; }
+#content .all1 h3::after{content: ''; width: 65px; height: 65px; border-radius: 50%; opacity: .4; background: #00a7ce;
+    display: block; position: absolute; top: -12px;left: 53%; margin-left: -155px; z-index: -1;}
+#content .box1{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around; 
+margin-bottom: 80px;
+position: relative;  }
+/* #content .box1 img{box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .4);} */
+#content .box1 p{font-size: 1.56rem ; font-weight: 500;}
+#content .box1 .p1{ color: #2F9BC9; position: absolute; display: block; bottom: 60px; left: 160px;} 
+#content .box1 .p2{color: #1A74C2; position: absolute; display: block; bottom: 65px; left: 655px;}
+#content .box1 .p3{color: #11207F; position: absolute; display: block; bottom: 60px; right:160px;}
+
+
+#content .all1 .text{position: relative;}
+#content .all1 .text dl{text-align: center; line-height: 2.5rem;  }
+#content .all1 .text dl dt{font-size: 1.38rem; font-weight: 700;}
+#content .all1 .text dl dd{font-size: 1.13rem; font-weight: 400;}
+#content .box2{border: 2px solid #2F9BC9; width: 465px; padding: 50px 0;border-radius: 10px; 
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .4);}
+#content .box3{border: 2px solid #1A74C2; width: 465px;padding: 50px 0; border-radius: 10px;
+position: absolute; left: 490px; bottom: 0; 
+box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .4);}
+#content .box4{border: 2px solid #11207F; width: 465px;padding: 50px 0; border-radius: 10px;
+    position: absolute; right: 0; bottom: 0;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, .4);}
+
+/*  직무소개 */
+
+#content .all2{width: 1450px; margin: 0 auto; position: relative;}
+#content .all2 h3{text-align: center; margin:180px 0; font-size: 3.13rem; font-weight: 700; }
+#content .all2 h3::after{content: ''; width: 65px; height: 65px; border-radius: 50%; opacity: 40%; background: #00a7ce;
+    display: block; position: absolute; top: -12px;left: 52%; margin-left: -155px; z-index: -1;}
+
+#content .all2{width: 1200px; margin: 0 auto; margin-bottom: 200px; position: relative;}
+#content .all2 img{margin-bottom: 40px;}
+#content .all2 dl{padding: 50px; margin-bottom: 40px;}
+#content .all2 .all2_1{border: 1px solid #0D1862; }
+#content .all2 .all2_2{border: 1px solid #0085ED;}
+#content .all2 dl dt{font-size: 2em;font-weight: 600; margin-bottom: 50px;}
+#content .all2 dl .title{font-size: 1.5rem; font-weight: 500;margin-bottom: 10px;}
+#content .all2 dl dd{font-size: 1.2rem; text-align: justify; line-height: 1.7em;margin-bottom: 30px;}
+

@@ -1,0 +1,67 @@
+.content_area{width: 1200px; margin: 0 auto; position: relative;}
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 120px 0; line-height: 2.8rem;}
+
+/* 채용 프로세스 */
+
+svg{width: 1200px;height: 300px;fill: none;stroke: #00a7ce;stroke-width: 20px;stroke-linecap: round;position: absolute; top: 120px;
+  left: 30px;stroke-dasharray: 700;stroke-dashoffset: 0;animation: ani 3s linear infinite;animation-iteration-count: 1; z-index: 20;}
+#svg6{transform: rotate(-90deg); margin-left: 432px; margin-top: 10px; z-index: 10;} 
+
+ @keyframes ani  {
+    0% {
+      stroke-dashoffset: 700;
+      stroke-width: 10px;
+    }
+    50% {
+      stroke-dashoffset: 350;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      stroke-width: 20px;
+    }
+  } 
+  #content .circle{position: relative;}
+  #content.circle strong{position: absolute;top: 130px; left:130px; font-size: 30px;}
+
+#content .process{position: relative; margin-bottom: 120px; }
+#content .process h3{font-size: 2.50rem; font-weight: 700;  text-align: center; margin-bottom: 150px;}
+#content .process h3::after{content: ''; width: 65px; height: 65px; border-radius: 50%; opacity: 40%; background: #00a7ce; z-index: -1;
+    display: block; position: absolute; top: -12px;left: 50%; margin-left: -155px; }
+#content .process div{height: 300px; margin:0 auto; position: relative;}
+#content .process div::before{content: ''; display: block; position: absolute; width: 2000px; top: 90px; left: -30%;  border-top: 1px solid #ccc;}
+#content .process ul{display: flex; justify-content: center; gap: 120px; }
+#content .process li{width: 170px; height: 170px; border-radius: 50%;  box-shadow: 0px 0px 50px 2px #ccc; outline-offset: 25px; outline: 2px dashed #ccc; background: #fff; }
+#content .process dl{ height: 165px; text-align: center; display: flex; justify-content: center; align-items: center; margin-top: 10px;}
+#content .process dt{font-size: 1.38rem; 
+position: absolute; 
+top: 20px;
+margin-left: 5px; 
+color: #00a7ce; 
+font-weight: 700;}
+#content .process dd{font-size: 1.38rem; font-weight: 500; }
+
+
+
+/* 복지제도 */
+#content{background: url(../images/content2/Moon.svg) left 1500px no-repeat ; }
+#content .welfare{position: relative;  }
+#content .welfare h3{font-size: 2.50rem; font-weight: 700;  text-align: center; margin-bottom: 120px; }
+
+#content .welfare h3::after{content: ''; width: 65px; height: 65px; border-radius: 50%; opacity: 40%; background: #00a7ce;
+    display: block; position: absolute; top: -12px;left: 50%; margin-left: -115px; z-index: -1;}
+
+#content .welfare ul{display: flex; gap: 25px;}
+#content .welfare li{ width: 280px; height: 350px; background: #fff; box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .4) ;}
+#content .welfare li i{transition: all .5s;}
+#content .welfare li:hover i{color: #00a7ce; transform: rotateY(360deg); }
+
+
+#content .welfare dt{font-weight: 600; font-size: 1.25rem; margin: 100px 0 20px 0; 
+    text-align: center; position: relative;}
+#content .welfare dt i{margin-right: 20px; position: absolute; top: -70px; left: 112px; font-size: 2.8rem;}
+#content .welfare dd{margin-left: 30px; font-size: 1.00rem;}
+
+#content .living{ padding-bottom: 30px; }
+#content .living2{ padding:30px 0;}
+#content .living3{ padding: 30px 0; margin-bottom: 200px; position: relative;}
+#content .living3 .a1{position: absolute; top: 30px; right: 50px; z-index: -1;}

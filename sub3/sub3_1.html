@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용안내-운영시간</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content1.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/9f8b253496.js" crossorigin="anonymous"></script>
+
+    <link href='./css/main.min.css' rel='stylesheet'>
+    <script src='./js/main.min.js'></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+
+   
+   <div class="visual">
+       <img src="./common/images/visual.jpg" alt="">
+       <span>이용안내</span>
+   </div>
+
+   <div class="sub_nav">
+        <ul>
+            <li><a href="./sub3_1.html" class="current">운영시간</a></li>
+            <li><a href="./sub3_2.html" >이용요금</a></li>
+            <li><a href="./sub3_3.html">우대정보</a></li>
+            <li><a href="./sub3_4.html" >오시는 길</a></li>
+        </ul>
+   </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                Home
+                &gt;
+                이용안내  
+                &gt;
+                <strong>운영시간</strong> 
+            </div>
+            <h2>운영시간</h2>
+            <p>Operating Time</p>
+        </div>
+
+        <p class="sec">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            &emsp; 
+            매표 및 입장마감은 영업종료 1시간 전까지 입니다. 
+            &emsp;
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </p>
+       
+       
+
+       <div class="time"> 
+        <!-- 백그라운드 이미지 -->
+       <ul class="text">
+            <li>월 ~ 목 : 10시 - 20시 <i class="fa-solid fa-square-check i1"></i></li>
+            <li>금 토 일 : 10시 - 22시 <i class="fa-solid fa-square-check i2"></i></li>
+            <li>롯데월드 아쿠아리움은 연중무휴입니다.</li>
+            <li>운영시간은 회사사정으로 인해 상시 변경될 수 있사오니, 방문일자의 운영시간을 확인해주세요.</li>
+        </ul>
+       </div>
+
+       <div id='calendar'></div>
+
+        <!-- <ul class="text">
+            <li>롯데월드 아쿠아리움은 연중무휴입니다.</li>
+            <li>운영시간은 회사사정으로 인해 상시 변경될 수 있사오니, 방문일자의 운영시간을 확인해주세요.</li>
+        </ul> -->
+    
+
+    </article>
+
+    <? include '../common/sub_footer.html' ?>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+      
+          var da = new Date();
+          var gmonth=(da.getMonth()+1);
+          var gdate=(da.getDate());
+          if(gmonth<10)gmonth='0'+gmonth;
+          if(gdate<10)gdate='0'+gdate;
+      
+          var idate =da.getFullYear() +'-'+gmonth+'-'+gdate;
+          //console.log(idate);
+      
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+              left: 'prevYear,prev,next,nextYear today',
+              center: 'title',
+              right: 'dayGridMonth,dayGridWeek,dayGridDay'
+            },
+            initialDate: idate,
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-01',
+                
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-02',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-03',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-04',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-05',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-06',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-07',
+                color: '#00a7ce',
+                
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-08',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-09',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-10',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-11',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-12',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-13',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-14',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-15',
+                
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-16',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-17',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-18',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-19',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-20',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-21',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-22',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-23',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-24',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-25',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-26',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-27',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 22:00',
+                start: '2024-04-28',
+                color: '#00a7ce',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-29',
+              },
+              {
+                title: '10:00 - 20:00',
+                start: '2024-04-30',
+              },
+            ]
+          });
+      
+          calendar.render();
+        });
+      
+      </script>
+  
+  
+
+
+
+
+    
+</body>
+</html>

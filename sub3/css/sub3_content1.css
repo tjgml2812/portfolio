@@ -1,0 +1,38 @@
+#content{width: 1200px; margin: 0 auto;}
+#content .sec{font-size: 1.56rem; font-weight: 500; text-align: center; margin: 120px 0 150px 0;}
+#content .sec i{color: #00a7ce;}
+#content .time{ position: relative;
+    width: 1200px; height: 340px;  background: url("../images/content1/time.jpg") no-repeat center fixed; 
+    border-radius: 10px;  margin-bottom: 100px;
+}
+ 
+#content .time .text{
+    
+   
+    font-size: 1.13rem; 
+    font-weight: 400; 
+    color: #fff;
+    width: 1200px;
+    height: 340px;
+    border-radius: 10px;
+    backdrop-filter:brightness(.6);
+    padding-top: 80px;
+    box-sizing: border-box;}
+
+#content .time .text li{list-style:inside; margin-left:80px; margin-bottom: 20px;}
+#content .time .text li i{margin-left: 10px;}
+#content .time .text .i1{color: #3788D8;}
+#content .time .text .i2{color: #00a7ce;}
+
+
+#calendar {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    
+}
+    
+
+/* #content .day{width: 1100px; height: 1000px; background: #d9d9d9; margin: 0 auto; margin-bottom: 40px;} */
+/* #content .text{margin-top: 40px; margin-bottom: 200px;} */
+/* #content .text li{font-size: 1.13rem; font-weight: 400; list-style:inside; margin-left: 50px; } */
