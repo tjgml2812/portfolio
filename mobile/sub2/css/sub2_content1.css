@@ -1,0 +1,40 @@
+/* 텝 */
+#content .tab_box{border-bottom: 1px solid #ccc; margin-bottom: 80px; margin-top: 80px;
+     width: 90%; margin-left: 5%; }
+#content .tabs {margin-bottom: 100px;}
+#content .tabs .contlist {display: none;}
+#content .tab_box ul{display: flex; justify-content: center;  }
+#content .tab_box ul li{width: 350px; text-align: center; }
+#content .tab_box ul li a{padding-bottom: 20px; 
+     font-size: 1.25rem; font-weight: 400; position: relative; }
+
+
+/* 본문 */
+#content .pop_menu li{margin-bottom: 55px; border-bottom: 1px solid #ccc; 
+ margin-left: 5%; margin-right: 5%; padding-bottom: 30px; position: relative;}
+#content .pop_menu img{width: 94%; border-radius: 5px; margin-left: 3%;}
+#content .pop_menu dl{width: 94%; margin-left: 3%; overflow: hidden;}
+#content .pop_menu dt{font-weight: 700; font-size: 1.25rem; margin: 15px 0 10px;}
+#content .pop_menu dd{font-weight: 500; font-size: 1.00rem; }
+
+#content .pop_menu .more{text-align: center; font-weight: 700; font-size: 1.0rem;
+width: 240px; padding: 6px 0; margin-top: 15px;
+background: #00A7CE; color: #fff; border-radius: 30px;}
+
+#content .pop_menu a span{display: block; width: 18%; padding: 10px 0;
+background: rgba(0, 0, 0, .6); text-align: center; color: #fff; border-radius: 5px;
+position: absolute; bottom: 147px; right: 3%;}
+
+/* 팝업 */
+.modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%;
+    background: #fff; display: none;}
+
+.modal_box img{width: 90%; margin:80px 5% 20px;}
+.modal_box dl{width: 90%; margin:10px 5%;  }
+.modal_box dt{font-size: 1.5em; font-weight: bold; margin-bottom: 10px; color: #00A7CE;}
+.modal_box dd{text-align: justify; line-height: 1.5rem;}
+.modal_box ul{width: 90%; margin:10px 5%;}
+.modal_box ul li{line-height: 1.8rem; font-size: 1.1rem;}
+.modal_box .close_btn{position: absolute; top: 40px; right: 5%;
+display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+height: 32px; background:url(../images/cancel.png) no-repeat;} 

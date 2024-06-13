@@ -1,0 +1,44 @@
+
+#content .content_area .box1{margin: 100px 0;}
+#content .content_area .box1 img{ width: 88%;  margin-left: 6%;}
+
+#content .content_area .box1 dl{text-align: justify; margin: 50px 0;}
+
+#content .content_area .box1 dt{color: #00a7ce; font-size: 2rem; font-weight: 700; margin-bottom: 40px; 
+    text-align: center; position: relative;}
+#content .content_area .box1 dt::before{
+    content: '';
+    width: 100px;
+    height: 2%;
+    background: #00a7ce;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} 
+#content .content_area .box1 dt::after{
+    content: '';
+    width: 100px;
+    height: 2%;
+    background: #00a7ce;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} 
+#content .content_area .box1 dd{width: 92%;  margin-left: 4%; font-size: 1.0em; font-weight: 400; line-height: 2rem;}
+
+#content .content_area h4{font-size: 1.8rem; font-weight: 700;  
+    text-align: center;  margin-bottom: 30px;  }
+#content .content_area .box2 img{
+    width: 60%; margin-left: 20%;
+}
+#content .content_area .box2 p{
+    width: 92%;  margin-left: 4%; font-size: 1.0em; font-weight: 400; line-height: 2rem; text-align: justify; 
+    margin-top: 50px;}
+
+#content .content_area .box3{margin: 50px 0 100px 0;}
+#content .content_area .box3 p{ font-size: 1.25rem; font-weight: 700;
+margin-left: 4%; }
+#content .content_area .box3 .img_box{ display: flex; margin-top: 35px;}
+#content .content_area .box3 .img_box img{width: 45%; margin: 0 auto;}
