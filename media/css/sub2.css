@@ -1,0 +1,309 @@
+/* 와이드 pc  */
+
+	#imgBG{display: block;}
+	
+	#content{ width:98%; margin:0 auto; 
+		/* background:rgba(0,0,0,.85); */
+		position: relative; 
+		padding-bottom: 150px;
+		word-break: break-all;
+	}
+	#content h2 {
+		position: absolute;
+		top: -500px;
+		font-family: 'Roboto Slab';
+		font-weight: 700;
+		width: 100%;
+		text-align: center;
+		font-size: 4.5em;
+		color: #FABF13;
+		text-shadow: 
+		2px 2px 4px rgba(0, 0, 0, 0.8), /* 첫 번째 그림자 */
+		-2px -2px 4px rgba(255, 213, 128, 0.5); 
+		}
+
+/* 유네스코 */
+#content .unesco1{
+	background:rgba(0,0,0,.85);
+}
+#content .unesco1 h3{
+	text-align: left;
+	font-family: 'Roboto Slab';
+	font-style: italic;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-bottom: 100px;
+	margin-left: 80px;
+	padding-top: 80px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px #FABF13;
+	
+}
+#content .unesco1 ul{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 55% 45%;
+    grid-gap: 30px;
+    grid-template-areas:
+        'a b'
+        'a b'
+		;
+}	
+
+
+#content .unesco1_1{grid-area: a; }
+#content .unesco1_2{grid-area: b;}
+#content .unesco1_2 img{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#content .unesco1 ul p{
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 50px;
+	line-height: 1.5rem;
+}
+
+#content .unesco1 ul p span{
+	display: block;
+	font-family: 'Roboto Slab';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px #00D778;
+}
+#content .unesco1 ul li a i{
+	padding: 5px 0 0 5px;
+}
+#content .unesco1 .clip_part .playBnt {
+    position: absolute;
+    background: url(../images/index/youtube1.png) center no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 20%;
+    height: 20%;
+    transition: all .5s;
+}
+
+#content .unesco1 .clip_part .imgPart:hover .playBnt {
+  background: url(../images/index/youtube2.png) center no-repeat;
+  background-size: 100% 100%;
+  
+} 
+
+#content .unesco1 .clip li:nth-of-type(2) {
+   margin-top: 80px;
+   margin-left: 10%;
+}
+
+#content .unesco3{
+	background:rgba(0,0,0,.85);
+	margin: 150px 0;
+}
+#content .unesco3 h3{
+	text-align: right;
+	font-family: 'Roboto Slab';
+	font-style: italic;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-bottom: 100px;
+	margin-right: 100px;
+	padding-top: 80px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px #FABF13;
+	
+}
+#content .unesco3 .unesco4{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 45% 55%;
+    grid-gap: 30px;
+    grid-template-areas:
+        'd c'
+        'd c'
+		;
+}	
+	
+#content .unesco3_1{grid-area: c; }
+#content .unesco3_2{grid-area: d;}
+
+#content .unesco3 .clip{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 45% 55%;
+    grid-gap: 30px;
+    grid-template-areas:
+        'f e'
+        'f e'
+		;
+}	
+
+#content .unesco3_3{grid-area: e; }
+#content .unesco3_4{grid-area: f; margin-top: 80px;
+	margin-left:20%;}
+
+#content .unesco3_2 img{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	object-position: center;
+}
+#content .unesco3_3 img{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#content .unesco3 ul p{
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 50px;
+	line-height: 1.5rem;
+}
+#content .unesco3 ul p span{
+	display: block;
+	font-family: 'Roboto Slab';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px #00D778;
+}
+#content .unesco3 ul li a i{
+	padding: 5px 0 0 5px;
+}
+.fa-solid.fa-arrow-right-long {
+    transition: all .3s ease;
+}
+
+ul:hover .fa-solid.fa-arrow-right-long {
+    animation: arrowAnimation 1s linear infinite;
+}
+
+@keyframes arrowAnimation {
+	0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+#content .unesco3 .clip_part .playBnt {
+    position: absolute;
+    background: url(../images/index/youtube1.png) center no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 20%;
+    height: 20%;
+    transition: all .5s;
+}
+#content .unesco3 .clip_part .imgPart:hover .playBnt {
+	background: url(../images/index/youtube2.png) center no-repeat;
+	background-size: 100% 100%;
+	
+  }
+
+ #content section:nth-of-type(5){
+	margin-bottom: 150px;
+ }
+ #content .unesco1 .clip li:nth-of-type(2) a,
+ #content .unesco3 .clip li:nth-of-type(2) a{
+	color: #FABF13;
+ }
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content {width:auto; margin: 0;}
+	#content .unesco1 h3, 
+	#content .unesco3 h3{
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+	} 
+	#content .unesco1 .unesco2,
+	#content .unesco3 .unesco4 {
+		grid-template-columns:49% 49%;}
+	#content .unesco1_2 img,#content .unesco3_2 img{height: 100%;}
+	#content .unesco1 .clip,#content .unesco3 .clip {
+		display: block;
+
+	}
+	
+	#content .unesco1 .clip li:nth-of-type(2) ,#content .unesco3_4{
+		padding-bottom: 100px;
+	}
+
+	#content .unesco1_1 p:nth-of-type(3),
+	#content .unesco3_1 p:nth-of-type(3){
+		display: none;
+	}
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	#content{
+		padding-bottom: 50px;
+	}
+	#content .unesco1_1 p:nth-of-type(2),
+	#content .unesco3_1 p:nth-of-type(2){
+		display: none;
+	}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	#content .unesco3 .unesco4 {
+		display: block;
+	}
+	#content .unesco1 ul {
+		display: block;
+	}
+	#content .unesco3 .clip{width: 100%; }
+	#content .unesco1 .clip{width: 100%; }
+	#content .unesco1 h3, 
+	#content .unesco3 h3{
+		font-size: 1.8rem;
+	} 
+	#content .unesco1 .clip li:nth-of-type(2),#content .unesco3_4 {
+		margin-left: 10%;
+	}
+	#content .unesco1_2 img,#content .unesco3_2 img  {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	#content .unesco3 .clip{width: 96%; }
+	#content .unesco1 .clip{width: 96%; }
+	#content .unesco1 .clip li:nth-of-type(2),#content .unesco3_4 {
+		margin-left: 0;
+	}
+}

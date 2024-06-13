@@ -1,0 +1,101 @@
+/* 와이드 pc  */
+
+	#imgBG{display: block;}
+	
+#content{ width:100%; margin:0; background:rgba(0,0,0,.9);position: relative;  padding-bottom: 300px; }
+#content h2 {
+	position: absolute;
+	top: -500px;
+	font-family: 'Roboto Slab';
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	font-size: 4.5em;
+	color: #FABF13;
+	text-shadow: 
+	2px 2px 4px rgba(0, 0, 0, 0.8), /* 첫 번째 그림자 */
+	-2px -2px 4px rgba(255, 213, 128, 0.5); 
+	}
+
+
+#content .GalleryBox{width: 96%; margin-left: 2%; }
+
+#content .GalleryBox h3{
+    font-size: 3.13rem;
+    color: #FABF13;
+    margin-bottom: 50px;
+	padding-top: 100px;
+	text-align: center;
+}
+#content .GalleryBox p{ 
+    margin-bottom: 100px;
+    font-size: 1.13rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-weight: 300;
+    word-break: break-all;}
+#content .GalleryBox ul{
+	column-count: 4;
+}
+#content .GalleryBox ul li{
+	padding: 20px 0;
+	transition: all .5s;
+}
+#content .GalleryBox ul li img{
+	width: 100%; 
+	height: 100%;
+    object-fit:cover; 
+	object-position: center; 
+	border-radius: 3px;
+	transition: all .5s;
+}
+
+#content .GalleryBox ul:hover li{
+    filter: brightness(.5);
+}
+#content .GalleryBox ul li:hover{
+    filter: brightness(1);
+}
+#content .GalleryBox ul li:hover img{
+    transform: scale(.95);
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content{padding-bottom: 180px; width:auto; margin: 0;}
+	#content .GalleryBox p{font-size: .95rem;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	#content .GalleryBox ul{
+		column-count: 3;
+	}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	#content .GalleryBox ul{
+		column-count:2;
+	}
+	#content .GalleryBox p{font-size: .8rem;}
+	
+}
+
+@media screen and (max-width:480px) {
+	#content .GalleryBox ul{
+		column-count:auto;
+	}
+	#content .GalleryBox h3{
+		font-size: 2.5rem;
+		
+	}
+	#content .GalleryBox p{font-size: .8rem;text-align: justify;}
+	
+}
