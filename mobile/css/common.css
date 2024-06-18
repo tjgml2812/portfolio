@@ -9,7 +9,7 @@ html{font-size: 14px;}
 body {
  color:#333;
  font-size:14px;
- font-family:"Noto+Sans+KR" }
+ font-family: 'Noto Sans KR', sans-serif;}
 img, fieldset { border:0; vertical-align:top }
 ul, ol, li, dl { list-style:none; }
 h1, h2, h3, h4, h5, h6 {
