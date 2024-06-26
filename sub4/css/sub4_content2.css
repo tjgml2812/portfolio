@@ -8,6 +8,24 @@
   margin-bottom: 150px;}
 
 /* 단체이용안내 */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(150px);
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 #content  h3{font-weight: 700; font-size: 1.56rem; margin-bottom: 30px;}
 #content  h3 i{margin-right:10px; color: #00a7ce;}
 

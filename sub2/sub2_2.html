@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="./common/css/sub2common.css">
     <link rel="stylesheet" href="./css/sub2_content2.css">
+    <link rel="stylesheet" href="../maincss/aos.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
     <!-- <script src="./common/js/prefixfree.min.js"></script> -->
@@ -19,7 +20,7 @@
    
    <div class="visual">
        <img src="./common/images/visual.jpg" alt="">
-       <span>프로그램</span>
+       <span data-aos="fade-up" data-aos-duration="1200">프로그램</span>
    </div>
 
    <div class="sub_nav">
@@ -39,15 +40,15 @@
                 &gt;
                 <strong>이벤트</strong> 
             </div>
-            <h2>이벤트</h2>
-            <p>Event</p>
+            <h2 data-aos="fade-up" data-aos-duration="1200">이벤트</h2>
+            <p data-aos="fade-up" data-aos-duration="1200">Event</p>
         </div>
 
-        <p class="sec"> 다양한 이벤트를 체험해 보세요 .</p>
+        <p class="sec" data-aos="fade-up" data-aos-duration="1200"> 다양한 이벤트를 체험해 보세요 .</p>
    
 
         <div class="content_area">
-                <ul>
+                <ul data-aos="fade-up" data-aos-duration="1200">
                     <li><img src="./images/content2/event01.jpg" alt="">
                         <dl>
                             <dt>빛의 길잡이</dt>
@@ -139,11 +140,12 @@
     </article>
 
     <? include '../common/sub_footer.html' ?>
-  
-
-
-
-
+    <script src="../mainjs/aos.js"></script>
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+      </script>
 
     
 </body>

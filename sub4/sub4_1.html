@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="./common/css/sub4common.css">
     <link rel="stylesheet" href="./css/sub4_content1.css">
+    <link rel="stylesheet" href="../maincss/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
    
 
@@ -23,7 +24,7 @@
    
    <div class="visual">
        <img src="./common/images/visual.jpg" alt="">
-       <span>예매안내</span>
+       <span data-aos="fade-up" data-aos-duration="1200">예매안내</span>
    </div>
 
    <div class="sub_nav">
@@ -44,15 +45,15 @@
                 &gt;
                 <strong>이용권 예매</strong> 
             </div>
-            <h2>이용권 예매</h2>
-            <p>Ticke</p>
+            <h2 data-aos="fade-up" data-aos-duration="1200">이용권 예매</h2>
+            <p data-aos="fade-up" data-aos-duration="1200">Ticke</p>
         </div>
 
-        <p class="sec"> 롯데월드 아쿠아리움만의 혜택을 확인해 보세요 ! </p>
+        <p class="sec" data-aos="fade-up" data-aos-duration="1200"> 롯데월드 아쿠아리움만의 혜택을 확인해 보세요 ! </p>
    
         <div class="swiper mySwiper">
            
-            <ul class="swiper-wrapper">
+            <ul class="swiper-wrapper" data-aos="fade-right" data-aos-duration="500">
 
                 <li class="back1 swiper-slide"> <img src="./images/content1/ticke01.jpg" alt="">
                     <dl>
@@ -136,6 +137,12 @@
     </article>
 
     <? include '../common/sub_footer.html' ?>
+    <script src="../mainjs/aos.js"></script>
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->

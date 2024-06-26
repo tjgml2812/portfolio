@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="./common/css/sub3common.css">
     <link rel="stylesheet" href="./css/sub3_content3.css">
+    <link rel="stylesheet" href="../maincss/aos.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
     <!-- <script src="./common/js/prefixfree.min.js"></script> -->
@@ -19,7 +20,7 @@
    
    <div class="visual">
        <img src="./common/images/visual.jpg" alt="">
-       <span>이용안내</span>
+       <span data-aos="fade-up" data-aos-duration="1200">이용안내</span>
    </div>
 
    <div class="sub_nav">
@@ -40,11 +41,11 @@
                 &gt;
                 <strong>우대정보</strong> 
             </div>
-            <h2>우대정보</h2>
-            <p> Promotion</p>
+            <h2 data-aos="fade-up" data-aos-duration="1200">우대정보</h2>
+            <p data-aos="fade-up" data-aos-duration="1200"> Promotion</p>
         </div>
 
-        <p class="sec"> 롯데월드 아쿠아리움의 다양한 프로모션을 확인해 보세요.</p>
+        <p class="sec" data-aos="fade-up" data-aos-duration="1200"> 롯데월드 아쿠아리움의 다양한 프로모션을 확인해 보세요.</p>
         
        
 
@@ -59,7 +60,7 @@
                       
                   </div>
                   
-                  <div class="contlist">
+                  <div class="contlist" data-aos="fade-up" data-aos-duration="800">
                     <h3 class="hidden">일반우대</h3>
                     <ul class="box1">
                         <li><img src="./images/content3/promotion1_01.jpg" alt=""> 
@@ -275,7 +276,12 @@
     <? include '../common/sub_footer.html' ?>
   
     <script src="./js/tab3_3.js"></script>
-
+    <script src="../mainjs/aos.js"></script>
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+      </script>
 
 
 
