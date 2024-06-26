@@ -64,4 +64,4 @@ font-weight: 700;}
 #content .living{ padding-bottom: 30px; }
 #content .living2{ padding:30px 0;}
 #content .living3{ padding: 30px 0; margin-bottom: 200px; position: relative;}
-#content .living3 .a1{position: absolute; top: 30px; right: 50px; z-index: -1;}
+#content .living3 .a1{position: absolute; top: 30px; right: 0; z-index: -1;}
